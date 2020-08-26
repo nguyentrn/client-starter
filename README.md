@@ -8,11 +8,11 @@
 
 ### Download manually
 
-Download the example:
+Clone git repo:
 
 ```bash
 git clone https://github.com/nguyentrn/client-starter.git
-cd with-redux-toolkit
+cd client-starter
 ```
 
 Install it and run:
