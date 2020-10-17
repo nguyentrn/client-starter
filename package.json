@@ -6,7 +6,9 @@
     "build": "next build",
     "start": "next start",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "cpn": "node dev_utils/addComponent",
+    "ctn": "node dev_utils/addContainer"
   },
   "dependencies": {
     "@apollo/client": "3.2.1",
