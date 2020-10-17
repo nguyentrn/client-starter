@@ -1,1 +1,1 @@
-export { default } from "./ButtonContainer.motion";
+export { default } from "./ButtonContainer.component";

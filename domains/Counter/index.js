@@ -1,1 +1,1 @@
-export { default } from "./CounterBox.motion";
+export { default } from "./CounterBox.component";

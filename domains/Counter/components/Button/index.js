@@ -1,1 +1,1 @@
-export { default } from "./Button.motion";
+export { default } from "./Button.component";
