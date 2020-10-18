@@ -1,10 +1,9 @@
 /* eslint-disable no-console */
-const fs = require("fs");
-const checkArgs = require("./checkArgs");
-const addStylesFile = require("./addStylesFile");
-const addJsxFile = require("./addJsxFile");
-const addIndex = require("./addIndex");
-addDomainIndex;
+const fs = require('fs');
+const checkArgs = require('./checkArgs');
+const addStylesFile = require('./addStylesFile');
+const addJsxFile = require('./addJsxFile');
+const addIndex = require('./addIndex');
 const { domain, name, fileType, domainDir, dir } = checkArgs(process.argv);
 
 if (!fs.existsSync(domainDir)) {
@@ -13,9 +12,9 @@ if (!fs.existsSync(domainDir)) {
   fs.mkdirSync(`${domainDir}\\containers`);
   fs.mkdirSync(`${domainDir}\\layouts`);
   fs.mkdirSync(`${domainDir}\\hooks`);
-  addIndex(domainDir, domain, "domain");
+  addIndex(domainDir, domain, 'domain');
   addStylesFile(domainDir, domain);
-  addJsxFile(domainDir, domain, "domain");
+  addJsxFile(domainDir, domain, 'domain');
 }
 if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir);
@@ -43,7 +42,7 @@ if (!fs.existsSync(dir)) {
   //   // export default Motion${name};
   //   // `);
   //   //   motionStream.end();
-  console.log(`\nDONE!      Đã tạo component ${name} !\n`);
+  console.log(`\nDONE!      Đã tạo ${fileType} ${name} !\n`);
 } else {
-  console.log(`\nERR!       Component ${name} trùng tên !\n`);
+  console.log(`\nERR!       ${fileType} ${name} trùng tên !\n`);
 }

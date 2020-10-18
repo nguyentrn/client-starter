@@ -1,4 +1,4 @@
-const fs = require("fs");
+const fs = require('fs');
 
 module.exports = (dir, name) => {
   const stylesStream = fs.createWriteStream(`${dir}\\${name}.styles.js`);

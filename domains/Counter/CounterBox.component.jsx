@@ -5,7 +5,7 @@ const CounterBox = () => {
   return (
     <StyledCounterBox>
       <CounterContainer />
-      x
+                x
     </StyledCounterBox>
   );
 };
