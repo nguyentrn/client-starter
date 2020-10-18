@@ -5,7 +5,7 @@ const NavItemList = ({ headerLinks }) => {
   return (
     <StyledNavItemList>
       {headerLinks.map((headerLink) => (
-        <NavItem headerLink={headerLink} />
+        <NavItem headerLink={headerLink} key={headerLink.slug} />
       ))}
     </StyledNavItemList>
   );
