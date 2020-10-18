@@ -1,11 +1,10 @@
-import StyledCounterBox from "./CounterBox.styles";
-import CounterContainer from "./containers/CounterContainer";
+import StyledCounterBox from './CounterBox.styles';
+import CounterLayout from './layouts/CounterLayout';
 
 const CounterBox = () => {
   return (
     <StyledCounterBox>
-      <CounterContainer />
-                x
+      <CounterLayout />
     </StyledCounterBox>
   );
 };

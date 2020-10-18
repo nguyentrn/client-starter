@@ -1,14 +1,7 @@
-import Link from "next/link";
+import App from '../domains/Layout';
 
 const IndexPage = () => {
-  return (
-    <>
-      <Link href="/counter">
-        <a>Counter</a>
-      </Link>
-      Home
-    </>
-  );
+  return <App>Home</App>;
 };
 
 export default IndexPage;

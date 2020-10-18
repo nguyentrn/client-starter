@@ -6,6 +6,6 @@ export default styled.div`
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  padding-bottom: 10%;
   width: 100%;
-  height: 80vh;
 `;

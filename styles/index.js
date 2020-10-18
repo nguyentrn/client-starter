@@ -1,13 +1,15 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
-import colors from "./colors";
-import devices from "./devices";
-import scrollBar from "./scrollBar";
+import styles from './styles';
+import colors from './colors';
+import devices from './devices';
+import scrollBar from './scrollBar';
 
 export const theme = {
-  colors: colors[0],
+  colors,
   devices,
   scrollBar,
+  ...styles
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -21,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   *,h1,h2,h3,h4,h5,h6 {
-    color: ${colors[0].dark};
+    color: ${colors.dark};
   }
   
   ul {
